@@ -12,7 +12,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "deploy-dev": "aws s3 sync ./build/ s3://amplify-frontend-dev-120455-deployment --region us-east-1",
+    "deploy-dev": "aws s3 sync ./build/ s3://frontend-20200701120635-hostingbucket-dev --region us-east-1",
     "cache-bust-dev": "aws cloudfront create-invalidation --distribution-id E2FSYVN2USYVRJ --paths '/'",
     "test": "jest",
     "eject": "react-scripts eject"
