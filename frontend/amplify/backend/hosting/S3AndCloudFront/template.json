@@ -125,6 +125,7 @@
             ],
             "Properties": {
                 "DistributionConfig": {
+                    "HttpVersion": "http2",
                     "Origins": [
                         {
                             "DomainName": {
@@ -260,6 +261,11 @@
                         }
                     ]
                 ]
+            }
+        },
+        "CloudFrontOriginAccessIdentity": {
+            "Value": {
+                "Ref": "OriginAccessIdentity"
             }
         }
     }
